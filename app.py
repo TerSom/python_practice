@@ -1,15 +1,3 @@
-price = 100000
-print(price)
-
-discount = 0.5
-print(discount)
-
-price = price * discount
-print(price)
-
-product_name = "baso"
-print(product_name)
-
-is_discount = False
-print(is_discount)
-
+name = input("siapa nama kamu : ")
+hobi = input ("apa hobimu : ")
+print(name + "hobi mu adalah" + hobi)
