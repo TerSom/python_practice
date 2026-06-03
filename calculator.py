@@ -1,6 +1,6 @@
 while True:
     operator = input("masukan operator (+,-,*,//,**,%) : ")
-    
+
     # exit
     if operator == "exit":
         break
@@ -9,7 +9,6 @@ while True:
     if operator not in ("+","-","*","//","**","%"):
         print("masukan operator yang benar!!!")
         continue
-
 
     # is_number?
     try:
@@ -21,24 +20,20 @@ while True:
         
     # operator
     if operator == "+":
-        jumlah = angka_pertama + angka_kedua
-        print(jumlah)
+        result = angka_pertama + angka_kedua
     elif operator == "-":
-        jumlah = angka_pertama - angka_kedua
-        print(jumlah)
+        result = angka_pertama - angka_kedua
     elif operator == "*":
-        jumlah = angka_pertama * angka_kedua
-        print(jumlah)
+        result = angka_pertama * angka_kedua
     elif operator == "//":
-        jumlah = angka_pertama // angka_kedua
-        print(jumlah)
+        result = angka_pertama // angka_kedua
     elif operator == "**":
-        jumlah = angka_pertama ** angka_kedua
-        print(jumlah)
+        result = angka_pertama ** angka_kedua
     elif operator == "%":
-        jumlah = angka_pertama % angka_kedua
-        print(jumlah)
+        result = angka_pertama % angka_kedua
+    print(f"hasilnya adalah {result}")
 
+    # is_done?
     is_done = input("mau lanjut (y/n) : ")
     if is_done == "y":
         continue
