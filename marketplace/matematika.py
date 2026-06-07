@@ -7,8 +7,14 @@
 # number = (2 + 10) * 5 ** 2
 # print(number)
 
-import math
+# import math
 
-number = 5.1
-number = math.ceil(number)
-print(number)
+# number = 5.1
+# number = math.ceil(number)
+# print(number)
+
+def plus(a,b):
+    return a + b
+
+def minus(a,b):
+    return a - b
