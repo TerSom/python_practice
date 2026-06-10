@@ -9,6 +9,9 @@ class Mahasiswa:
     def perkenalan(self):
         print(f"halo nama saya {self.nama}")
 
+    def halo(self,nama):
+        print(f"halo {nama} saya {self.nama}")
+
 kampus1 = Kampus()
 print(kampus1.nama)
 print(kampus1.alamat)
@@ -22,6 +25,7 @@ Mahasiswa1 = Mahasiswa()
 Mahasiswa1.nim = 123
 Mahasiswa1.nama = "kocak"
 Mahasiswa1.perkenalan()
+Mahasiswa1.halo("dian")
 
 print(Mahasiswa1.nim)
 print(Mahasiswa1.nama)
@@ -30,6 +34,7 @@ Mahasiswa2 = Mahasiswa()
 Mahasiswa2.nim = 321
 Mahasiswa2.nama = "umay"
 Mahasiswa2.perkenalan()
+Mahasiswa2.halo("dian")
 
 print(Mahasiswa2.nim)
 print(Mahasiswa2.nama)
