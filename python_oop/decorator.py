@@ -27,3 +27,23 @@ print(f"{bank_accoount.no}, {bank_accoount.balance}, {bank_accoount.active}")
 
 bank_accoount2 = BankAccount.disabled("131231131",10000)
 print(f"{bank_accoount2.no}, {bank_accoount2.balance}, {bank_accoount2.active}")
+
+class Category:
+    _name = ""
+
+    @property
+    def name(self):
+        return self._name
+    
+    @name.setter
+    def name(self, name):
+        if name == "":
+            raise ValueError("nama gk boleh kosong")
+        self._name = name
+    
+    
+
+Category1 = Category()
+Category1.name = "terry"
+print(Category1.name)
+
