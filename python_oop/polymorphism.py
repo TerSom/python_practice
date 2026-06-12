@@ -66,3 +66,35 @@ apple1 = Apple(10)
 apple2 = Apple(10)
 apple3 = apple1 + apple2
 print(apple3)
+
+from abc import ABC, abstractmethod
+import math
+
+class Shape(ABC):
+    
+    @abstractmethod
+    def area(self):
+        pass
+
+class Rectangle(Shape):
+    def __init__(self,lenght, width):
+        self.lenght = lenght
+        self.width = width
+
+    def area(self):
+        return self.lenght * self.width
+    
+class Cricle(Shape):
+    def __init__(self,radius):
+        self.radius = radius
+    
+    def area(self):
+        return math.pi * self.radius ** 2
+    
+shape = [
+    Rectangle(5,3),
+    Cricle(18)
+]
+
+for s in shape:
+    print(f"Area is {s.area()}")
