@@ -18,10 +18,10 @@ class Mobil(Kendaraan):
     def klakson(self):
         print(f"Mobil {self.info()} klakson")
 
-# porshce = Mobil("gt3 rs",2023,4)
-# print(porshce.info())
-# porshce.nyalakan()
-# porshce.klakson()
+porshce = Mobil("gt3 rs",2023,4)
+print(porshce.info())
+porshce.nyalakan()
+porshce.klakson()
 
 
 class Motor(Kendaraan):
@@ -94,4 +94,4 @@ terry4 = VoicePresident("terry2",1313)
 print(isinstance(terry,Karyawan))
 print(isinstance(terry2,Karyawan))
 print(isinstance(terry3,Karyawan))
-print(isinstance(terry4,Karyawan))S
+print(isinstance(terry4,Karyawan))
